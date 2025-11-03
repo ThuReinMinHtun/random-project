@@ -129,73 +129,77 @@ body {
 
 
 /* 📱 MOBILE RESPONSIVE SECTION */
+/* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+  body {
+    background-color: #ffe6e9;
+    overflow: hidden;
+  }
+
+  .question-container {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
   .question {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   .tenor-gif-embed {
-    height: 12rem;
+    width: 100%;
+    height: auto;
     margin-bottom: 2rem;
   }
 
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .btn {
-    font-size: 16px;
-    padding: 8px 18px;
+    position: relative;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 12px 0;
+    transform: none;
+    box-shadow: 0px 3px 10px rgba(255, 107, 129, 0.5);
   }
 
-  .yes-btn {
-    right: 52%;
-  }
-
+  .yes-btn,
   .no-btn {
-    left: 52%;
+    position: relative;
+    left: 0;
+    right: 0;
   }
 
   .result-container h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    padding: 0 10px;
   }
 
-  .cssload-main * {
-    font-size: 48px;
+  .gif-result {
+    width: 90%;
+    height: auto;
   }
 }
 
+/* For very small devices */
 @media (max-width: 480px) {
   .question {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
-
-  .tenor-gif-embed {
-    height: 10rem;
-    margin-bottom: 1.5rem;
-  }
-
   .btn {
-    font-size: 14px;
-    padding: 6px 16px;
+    font-size: 1rem;
+    padding: 10px 0;
   }
-
-  .yes-btn {
-    right: 50%;
-  }
-
-  .no-btn {
-    left: 50%;
-  }
-
   .result-container h2 {
-    font-size: 1.8rem;
-  }
-
-  .cssload-main * {
-    font-size: 40px;
-  }
-
-  .container,
-  .question-container,
-  .result-container {
-    width: 100%;
+    font-size: 1.5rem;
   }
 }
