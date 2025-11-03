@@ -27,5 +27,5 @@ yesBtn.addEventListener("click", () => {
     heartLoader.style.display = "none";
     resultContainer.style.display = "flex";
     gifResult.play();
-  }, 3000);
+  }, 500);
 });
